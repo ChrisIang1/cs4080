@@ -1,0 +1,14 @@
+fun add(a, b) {
+  return a + b;
+}
+
+var x = "outer";
+{
+  var x = "inner";
+  print x;
+}
+
+print x;
+print add(1, 2);
+print add(1);
+print notDeclared;
