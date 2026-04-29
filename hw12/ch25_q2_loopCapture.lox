@@ -1,0 +1,17 @@
+var first;
+var second;
+var third;
+
+for (var i = 0; i < 3; i = i + 1) {
+  fun capture() {
+    print i;
+  }
+
+  if (i == 0) first = capture;
+  if (i == 1) second = capture;
+  if (i == 2) third = capture;
+}
+
+first();
+second();
+third();

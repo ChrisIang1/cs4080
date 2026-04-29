@@ -1,0 +1,18 @@
+fun makeAdder(a) {
+  fun add(b) {
+    return a + b;
+  }
+
+  return add;
+}
+
+var start = clock();
+var total = 0;
+
+for (var i = 0; i < 200000; i = i + 1) {
+  var addI = makeAdder(i);
+  total = total + addI(1);
+}
+
+print total;
+print clock() - start;

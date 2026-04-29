@@ -1,0 +1,5 @@
+print type(123);
+print type("lox");
+print sqrt(144);
+print len("bytecode");
+print str(true) + "/" + str(nil);
