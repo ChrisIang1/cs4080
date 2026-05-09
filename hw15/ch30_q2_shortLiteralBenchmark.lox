@@ -1,0 +1,13 @@
+var i = 0;
+var matches = 0;
+var start = clock();
+
+while (i < 4000000) {
+  var a = "go";
+  var b = "go";
+  if (a == b) matches = matches + 1;
+  i = i + 1;
+}
+
+print matches;
+print clock() - start;

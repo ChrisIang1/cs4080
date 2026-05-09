@@ -1,0 +1,11 @@
+class Empty {}
+
+var start = clock();
+var i = 0;
+while (i < 3000000) {
+  Empty();
+  i = i + 1;
+}
+
+print i;
+print clock() - start;
